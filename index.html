@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -128,6 +129,16 @@
   }
   .logo-mark svg, .logo-mark .logo-icon{ width:26px; height:26px; flex-shrink:0; object-fit:contain; }
   .logo-mark .sub{ font-size:10px; font-weight:500; letter-spacing:.24em; opacity:.7; display:block; font-family:'Manrope'; }
+  .logo-badge{
+    display:flex; align-items:center;
+    background:var(--white); border-radius:10px;
+    padding:6px 16px;
+    box-shadow:0 2px 10px rgba(0,0,0,.10);
+    transition:padding .3s ease;
+  }
+  .logo-badge .logo-full{ height:40px; width:auto; display:block; }
+  header.scrolled .logo-badge{ padding:5px 14px; }
+  header.scrolled .logo-badge .logo-full{ height:34px; }
   nav{ display:flex; gap:36px; }
   nav a{
     color:var(--white); font-size:14px; opacity:.85;
@@ -392,8 +403,7 @@
 
 <header id="siteHeader">
   <div class="logo-mark">
-    <img src="assets/logo-icon.png" alt="Co-pilot ONE" class="logo-icon">
-    <span>Co-pilot ONE<span class="sub">DENTAL PARTNER</span></span>
+    <span class="logo-badge"><img src="assets/logo-full.png" alt="Co-pilot ONE / DENTAL PARTNER" class="logo-full"></span>
   </div>
   <nav>
     <a href="#concept">私たちについて</a>
@@ -528,7 +538,7 @@
 <section class="pricing" id="pricing">
   <div class="waypoint" data-wp="pricing"></div>
   <div class="section-inner">
-    <span class="section-tag">// PLAN（たたき台）</span>
+    <span class="section-tag">// PLAN</span>
     <h2 class="section-title">まずは、無理のない一歩から。</h2>
     <p class="section-lead">医院の規模やフェーズに合わせて、3つのプランをご用意しています。まずはお気軽にご相談ください。<br><span style="opacity:.6">※ 掲載価格は目安です。正式な料金は個別にご案内いたします。</span></p>
 
@@ -594,7 +604,7 @@
     <p class="section-lead">一院一院にしっかり向き合えるよう、少数精鋭のメンバーでCo-pilot ONEを運営しています。</p>
     <div class="team-grid reveal">
       <div class="team-card">
-        <div class="team-photo has-photo"><img src="assets/ohashi-marika.jpg" alt="大橋 麻莉佳"></div>
+        <div class="team-photo has-photo"><img src="assets/ohashi-marika1.jpg" alt="大橋 麻莉佳"></div>
         <div class="team-info">
           <span class="role en">Marketing Producer / Digital Marketer</span>
           <h4>大橋 麻莉佳</h4>
@@ -602,7 +612,7 @@
         </div>
       </div>
       <div class="team-card">
-        <div class="team-photo"><span>PHOTO 準備中</span></div>
+        <div class="team-photo has-photo"><img src="assets/sasaki-miyu.jpg" alt="佐々木 美悠"></div>
         <div class="team-info">
           <span class="role en">Digital Marketer</span>
           <h4>佐々木 美悠</h4>
@@ -610,7 +620,7 @@
         </div>
       </div>
       <div class="team-card">
-        <div class="team-photo"><span>PHOTO 準備中</span></div>
+        <div class="team-photo has-photo"><img src="assets/yuka-kiyota.jpg" alt="清田 悠加"></div>
         <div class="team-info">
           <span class="role en">Dental Marketing Advisor</span>
           <h4>清田 悠加</h4>
