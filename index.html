@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -129,16 +128,6 @@
   }
   .logo-mark svg, .logo-mark .logo-icon{ width:26px; height:26px; flex-shrink:0; object-fit:contain; }
   .logo-mark .sub{ font-size:10px; font-weight:500; letter-spacing:.24em; opacity:.7; display:block; font-family:'Manrope'; }
-  .logo-badge{
-    display:flex; align-items:center;
-    background:var(--white); border-radius:10px;
-    padding:6px 16px;
-    box-shadow:0 2px 10px rgba(0,0,0,.10);
-    transition:padding .3s ease;
-  }
-  .logo-badge .logo-full{ height:40px; width:auto; display:block; }
-  header.scrolled .logo-badge{ padding:5px 14px; }
-  header.scrolled .logo-badge .logo-full{ height:34px; }
   nav{ display:flex; gap:36px; }
   nav a{
     color:var(--white); font-size:14px; opacity:.85;
@@ -356,6 +345,13 @@
   /* ---------- team ---------- */
   .team{ background:var(--white); }
   .team-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; max-width:1000px; }
+  .team-stats{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:32px; }
+  .team-stat{
+    display:inline-flex; align-items:baseline; gap:5px;
+    border:1px solid var(--mist); border-radius:100px;
+    padding:8px 18px; font-size:var(--fs-cap); color:var(--navy-700);
+  }
+  .team-stat b{ font-family:'Space Grotesk'; color:var(--teal-500); font-size:15px; }
   .team-card{ border:1px solid var(--mist); border-radius:6px; overflow:hidden; }
   .team-photo{
     aspect-ratio:4/3; background:linear-gradient(135deg,var(--navy-700),var(--teal-500));
@@ -403,7 +399,8 @@
 
 <header id="siteHeader">
   <div class="logo-mark">
-    <span class="logo-badge"><img src="assets/logo-full.png" alt="Co-pilot ONE / DENTAL PARTNER" class="logo-full"></span>
+    <img src="assets/logo-icon.png" alt="Co-pilot ONE" class="logo-icon">
+    <span>Co-pilot ONE<span class="sub">DENTAL PARTNER</span></span>
   </div>
   <nav>
     <a href="#concept">私たちについて</a>
@@ -482,39 +479,39 @@
   <div class="waypoint" data-wp="services"></div>
   <div class="section-inner">
     <span class="section-tag">// WHAT WE DO</span>
-    <h2 class="section-title">市場分析からブランディング、<br>SNS・広告・CRMまで一気通貫。</h2>
-    <p class="section-lead">Co-pilot ONEは、歯科医院専門のマーケティングチームです。「集患」「採用」「ブランディング」という、院長先生が一人で抱えがちな課題に対して、必要な機能だけをワンストップで伴走します。</p>
+    <h2 class="section-title">歯科医院専門だからこその、<br>実行力。</h2>
+    <p class="section-lead">Co-pilot ONEは、歯科医院専門のマーケティングチームです。すべてを同時に一気に実施するのではなく、医院様の状況に合わせて、必要な施策を必要なタイミングでご提案します。</p>
   </div>
   <div class="service-grid reveal">
     <div class="service-card">
-      <span class="tag">SERVICE 01</span>
-      <h3>SNS運用代行</h3>
-      <p>Instagram・LINE公式などを活用し、集患・採用につながる発信を企画〜投稿〜分析まで代行します。</p>
+      <span class="tag">01 / RECRUITING</span>
+      <h3>採用支援</h3>
+      <p>求人ページの導線設計から採用ブランディングまで、歯科衛生士・スタッフ採用を支援します。</p>
     </div>
     <div class="service-card">
-      <span class="tag">SERVICE 02</span>
-      <h3>Web広告運用</h3>
-      <p>Google・Meta広告を中心に、医療広告ガイドラインに準拠した広告設計・運用・改善を行います。</p>
+      <span class="tag">02 / PATIENT CRM</span>
+      <h3>CRM・患者導線設計</h3>
+      <p>予約・リコール・口コミ導線を設計し、再来院率とLTVの向上につなげます。</p>
     </div>
     <div class="service-card">
-      <span class="tag">SERVICE 03</span>
-      <h3>ホームページ制作・改善</h3>
-      <p>集患に強い構成設計、医療広告ガイドライン対応、スマホ最適化まで一貫して制作します。</p>
+      <span class="tag">03 / SNS BRANDING</span>
+      <h3>SNS運用・ブランディング</h3>
+      <p>Instagram運用を中心に、小児矯正・自費診療など、医院ごとの強みをブランディングします。</p>
     </div>
     <div class="service-card">
-      <span class="tag">SERVICE 04</span>
-      <h3>ブランディング支援</h3>
-      <p>医院のロゴ・世界観・メッセージ設計を、Co-pilot ONE自身と同じ考え方で伴走します。</p>
+      <span class="tag">04 / ADS & VIDEO</span>
+      <h3>Web広告・動画制作</h3>
+      <p>Google・Meta広告や動画コンテンツを、目的とターゲットに応じて設計・運用します。</p>
     </div>
     <div class="service-card">
-      <span class="tag">SERVICE 05</span>
-      <h3>市場・データ分析</h3>
-      <p>競合医院や地域の患者動向を分析し、戦略の裏付けとなるデータを提供します。</p>
+      <span class="tag">05 / EXPANSION</span>
+      <h3>分院展開支援</h3>
+      <p>商圏分析や開院前マーケティングで、新規開業・分院展開をサポートします。</p>
     </div>
     <div class="service-card">
-      <span class="tag">SERVICE 06</span>
-      <h3>採用サポート</h3>
-      <p>歯科衛生士・スタッフ採用に向けた、SNS・採用ページの設計を支援します。</p>
+      <span class="tag">06 / CREATIVE</span>
+      <h3>クリエイティブサポート</h3>
+      <p>院内撮影・動画編集・デザイン制作・ロゴ作成・公式キャラクター・院内POP/チラシなど、必要に応じて柔軟に対応します。</p>
     </div>
   </div>
 </section>
@@ -538,61 +535,48 @@
 <section class="pricing" id="pricing">
   <div class="waypoint" data-wp="pricing"></div>
   <div class="section-inner">
-    <span class="section-tag">// PLAN</span>
+    <span class="section-tag">// ご契約形態・料金プラン</span>
     <h2 class="section-title">まずは、無理のない一歩から。</h2>
-    <p class="section-lead">医院の規模やフェーズに合わせて、3つのプランをご用意しています。まずはお気軽にご相談ください。<br><span style="opacity:.6">※ 掲載価格は目安です。正式な料金は個別にご案内いたします。</span></p>
+    <p class="section-lead">単発の施策実施ではなく、課題整理→実行→効果検証→改善まで伴走し、成果につながる仕組みをつくるため、最低契約期間を3ヶ月として設定しています。</p>
 
     <div class="plan-grid reveal">
       <div class="plan-card">
-        <span class="plan-name">PLAN A</span>
-        <div class="plan-title">ベーシック</div>
-        <div class="plan-price">¥100,000<span> / 月（税別）</span></div>
+        <span class="plan-name">LIGHT</span>
+        <div class="plan-title">マーケ担当不在を補うアドバイザリー伴走</div>
+        <div class="plan-price">¥80,000<span> / 月（税別）</span></div>
         <ul>
-          <li>Instagram投稿 月8本</li>
-          <li>アカウント分析・月次レポート</li>
+          <li>現状分析・課題整理・アドバイス</li>
+          <li>施策の企画・改善案作成</li>
+          <li>簡易的なディレクション（実制作は小規模）</li>
         </ul>
-        <div class="plan-for">まずは低コストでSNSを始めたい医院様に</div>
       </div>
       <div class="plan-card featured">
-        <span class="plan-name">PLAN B</span>
-        <div class="plan-title">スタンダード</div>
-        <div class="plan-price">¥200,000<span> / 月（税別）</span></div>
+        <span class="plan-name">PARTNER</span>
+        <div class="plan-title">戦略立案から優先施策の実行まで一気通貫で伴走</div>
+        <div class="plan-price">¥150,000<span> / 月（税別）</span></div>
         <ul>
-          <li>Instagram投稿 月12本＋ストーリーズ</li>
-          <li>広告運用（広告費の20％、最低手数料5万円）</li>
-          <li>月1回の戦略ミーティング</li>
+          <li>LIGHTの全内容</li>
+          <li>月次マーケティングMTG</li>
+          <li>採用・CRM・SNS運用等から、月ごとに優先施策を選定、実行</li>
+          <li>一定量の撮影・クリエイティブ制作支援</li>
+          <li>既存HP会社等へのディレクション窓口</li>
         </ul>
-        <div class="plan-for">集患を本格的に強化したい医院様に</div>
       </div>
       <div class="plan-card">
-        <span class="plan-name">PLAN C</span>
-        <div class="plan-title">プレミアム</div>
+        <span class="plan-name">GROWTH</span>
+        <div class="plan-title">複数プロジェクトを並行推進・分院展開加速</div>
         <div class="plan-price">¥300,000<span> / 月（税別）</span></div>
         <ul>
-          <li>複数媒体（Instagram＋LINE公式等）フル運用</li>
-          <li>広告運用＋クリエイティブ制作込み</li>
-          <li>隔週ミーティング・採用支援込み</li>
+          <li>PARTNERの全内容</li>
+          <li>複数施策の同時平行進行（採用＋CRM等）</li>
+          <li>撮影・動画・クリエイティブ制作枠の拡大</li>
+          <li>広告運用ディレクション・高頻度分析</li>
+          <li>分院立ち上げプロジェクト支援の一部</li>
         </ul>
-        <div class="plan-for">集患・採用・ブランディングを丸ごと任せたい医院様に</div>
       </div>
     </div>
 
-    <span class="section-tag">// ホームページ制作（別途・初期費用）</span>
-    <div class="hp-table">
-      <div class="hp-row head">
-        <div>プラン</div><div>費用目安</div><div>内容</div>
-      </div>
-      <div class="hp-row">
-        <div>ライト</div><div>¥300,000〜500,000</div><div>1〜3ページ構成</div>
-      </div>
-      <div class="hp-row">
-        <div>スタンダード</div><div>¥600,000〜1,000,000</div><div>5〜8ページ構成</div>
-      </div>
-      <div class="hp-row">
-        <div>フルオーダー</div><div>¥1,000,000〜2,000,000</div><div>10ページ以上／撮影・動画込み</div>
-      </div>
-    </div>
-    <p class="price-note">※ 初期設定費（アカウント設計・ブランドガイドライン策定など）を別途 ¥50,000〜100,000 でご案内する場合があります。</p>
+    <p class="price-note">※ 広告媒体費、LINE/CRM等のツール利用料、大規模なHP/LP制作、大規模撮影、ロゴ/キャラクター個別制作、クリエイター費は別途実費または個別のお見積りとなります。<br>※ LIGHT/PARTNERプランには月あたりの対応範囲・制作上限がございます。上記等、課題に合わせた施策をカスタマイズ可能です。</p>
   </div>
 </section>
 
@@ -602,9 +586,14 @@
     <span class="section-tag">// THE CREW</span>
     <h2 class="section-title">顔の見えるパートナーでありたい。</h2>
     <p class="section-lead">一院一院にしっかり向き合えるよう、少数精鋭のメンバーでCo-pilot ONEを運営しています。</p>
+    <div class="team-stats reveal">
+      <span class="team-stat">WEBマーケター <b>3</b>名</span>
+      <span class="team-stat">歯科衛生士 <b>2</b>名</span>
+      <span class="team-stat">デザイナー <b>1</b>名</span>
+    </div>
     <div class="team-grid reveal">
       <div class="team-card">
-        <div class="team-photo has-photo"><img src="assets/ohashi-marika1.jpg" alt="大橋 麻莉佳"></div>
+        <div class="team-photo has-photo"><img src="assets/ohashi-marika.jpg" alt="大橋 麻莉佳"></div>
         <div class="team-info">
           <span class="role en">Marketing Producer / Digital Marketer</span>
           <h4>大橋 麻莉佳</h4>
@@ -612,7 +601,7 @@
         </div>
       </div>
       <div class="team-card">
-        <div class="team-photo has-photo"><img src="assets/sasaki-miyu.jpg" alt="佐々木 美悠"></div>
+        <div class="team-photo"><span>PHOTO 準備中</span></div>
         <div class="team-info">
           <span class="role en">Digital Marketer</span>
           <h4>佐々木 美悠</h4>
@@ -620,7 +609,7 @@
         </div>
       </div>
       <div class="team-card">
-        <div class="team-photo has-photo"><img src="assets/yuka-kiyota.jpg" alt="清田 悠加"></div>
+        <div class="team-photo"><span>PHOTO 準備中</span></div>
         <div class="team-info">
           <span class="role en">Dental Marketing Advisor</span>
           <h4>清田 悠加</h4>
